@@ -309,6 +309,338 @@
             color: #ccc;
             font-size: 1.1em;
         }
+        
+        /* AMV Responsive Styles */
+        
+        /* Tablets and Small Laptops (768px - 991px) */
+        @media (max-width: 991px) and (min-width: 768px) {
+            .amv-header-top {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px 20px 15px;
+            }
+            
+            .amv-logo-container {
+                order: 1;
+            }
+            
+            .amv-stats {
+                order: 2;
+                gap: 15px;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .amv-header-middle {
+                padding: 0 20px;
+                margin-bottom: 15px;
+            }
+            
+            .amv-nav-link {
+                margin: 0 10px;
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            
+            .amv-nav-text {
+                display: none;
+            }
+            
+            .amv-header-bottom {
+                padding: 0 20px 20px;
+            }
+            
+            .amv-title {
+                font-size: 2.5em;
+            }
+            
+            .amv-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+            
+            .video-player {
+                max-width: 95%;
+                max-height: 65%;
+            }
+        }
+        
+        /* Mobile Landscape (480px - 767px) */
+        @media (max-width: 767px) and (min-width: 480px) {
+            .amv-header-top {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 15px 10px;
+            }
+            
+            .amv-header-logo {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .amv-title {
+                font-size: 2em;
+            }
+            
+            .amv-subtitle {
+                font-size: 1em;
+            }
+            
+            .amv-stats {
+                gap: 10px;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .amv-stat-item {
+                padding: 10px 15px;
+                flex: 1;
+                max-width: 120px;
+            }
+            
+            .amv-stat-number {
+                font-size: 1.5em;
+            }
+            
+            .amv-stat-label {
+                font-size: 0.7em;
+            }
+            
+            .amv-header-middle {
+                padding: 0 15px;
+                margin-bottom: 10px;
+            }
+            
+            .amv-nav-link {
+                margin: 0 5px;
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+            
+            .amv-nav-text {
+                display: none;
+            }
+            
+            .amv-header-bottom {
+                padding: 0 15px 15px;
+            }
+            
+            .amv-description {
+                font-size: 1em;
+                margin-bottom: 15px;
+            }
+            
+            .amv-actions {
+                gap: 15px;
+            }
+            
+            .play-all-btn, .back-to-music-btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+            
+            .amv-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 12px;
+            }
+            
+            .amv-thumbnail {
+                height: 140px;
+            }
+            
+            .amv-info {
+                padding: 12px;
+            }
+            
+            .amv-title {
+                font-size: 1.1em;
+            }
+            
+            .amv-artist {
+                font-size: 0.85em;
+            }
+            
+            .amv-duration {
+                font-size: 0.75em;
+            }
+            
+            .video-player {
+                max-width: 98%;
+                max-height: 60%;
+            }
+            
+            .video-title {
+                font-size: 1.3em;
+            }
+            
+            .video-artist {
+                font-size: 1em;
+            }
+        }
+        
+        /* Mobile Portrait (320px - 479px) */
+        @media (max-width: 479px) {
+            .amv-header-top {
+                padding: 10px 10px 5px;
+            }
+            
+            .amv-header-logo {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .amv-title {
+                font-size: 1.8em;
+            }
+            
+            .amv-subtitle {
+                font-size: 0.9em;
+            }
+            
+            .amv-stats {
+                gap: 8px;
+            }
+            
+            .amv-stat-item {
+                padding: 8px 10px;
+                flex: 1;
+                max-width: 100px;
+            }
+            
+            .amv-stat-number {
+                font-size: 1.3em;
+            }
+            
+            .amv-stat-label {
+                font-size: 0.65em;
+            }
+            
+            .amv-header-middle {
+                padding: 0 10px;
+                margin-bottom: 8px;
+            }
+            
+            .amv-nav-link {
+                margin: 0 3px;
+                font-size: 0.85em;
+                padding: 6px 12px;
+            }
+            
+            .amv-nav-text {
+                display: none;
+            }
+            
+            .amv-nav-icon {
+                font-size: 1em;
+            }
+            
+            .amv-header-bottom {
+                padding: 0 10px 10px;
+            }
+            
+            .amv-description {
+                font-size: 0.9em;
+                margin-bottom: 12px;
+            }
+            
+            .amv-actions {
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .play-all-btn, .back-to-music-btn {
+                width: 100%;
+                max-width: 250px;
+                padding: 8px 15px;
+                font-size: 0.85em;
+                justify-content: center;
+            }
+            
+            .amv-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+            
+            .amv-card {
+                border-radius: 8px;
+            }
+            
+            .amv-thumbnail {
+                height: 120px;
+            }
+            
+            .amv-info {
+                padding: 10px;
+            }
+            
+            .amv-title {
+                font-size: 1em;
+                margin-bottom: 6px;
+            }
+            
+            .amv-artist {
+                font-size: 0.8em;
+                margin-bottom: 4px;
+            }
+            
+            .amv-duration {
+                font-size: 0.7em;
+            }
+            
+            .close-video {
+                top: 15px;
+                right: 15px;
+                font-size: 25px;
+            }
+            
+            .video-player {
+                max-width: 95%;
+                max-height: 50%;
+            }
+            
+            .video-title {
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            
+            .video-artist {
+                font-size: 0.95em;
+            }
+            
+            .video-info {
+                margin-top: 15px;
+                padding: 0 10px;
+            }
+        }
+        
+        /* Ultra Small Devices (below 320px) */
+        @media (max-width: 319px) {
+            .amv-grid {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                gap: 8px;
+            }
+            
+            .amv-thumbnail {
+                height: 100px;
+            }
+            
+            .amv-info {
+                padding: 8px;
+            }
+            
+            .amv-title {
+                font-size: 0.9em;
+            }
+            
+            .amv-artist {
+                font-size: 0.75em;
+            }
+            
+            .amv-duration {
+                font-size: 0.65em;
+            }
+        }
     </style>
 </head>
 <body>
