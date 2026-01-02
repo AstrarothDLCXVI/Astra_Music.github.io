@@ -1,0 +1,9 @@
+<!-- The Cure Image Placeholder -->
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="300" fill="#16213e"/>
+<circle cx="150" cy="100" r="35" fill="#2d0080"/>
+<rect x="120" y="140" width="60" height="90" fill="#4a0080"/>
+<rect x="100" y="160" width="25" height="70" fill="#6a00f4"/>
+<rect x="175" y="160" width="25" height="70" fill="#6a00f4"/>
+<text x="150" y="270" text-anchor="middle" fill="#b794f6" font-family="Arial" font-size="20">The Cure</text>
+</svg>

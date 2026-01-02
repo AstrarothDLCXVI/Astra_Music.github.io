@@ -1,0 +1,10 @@
+<!-- My Chemical Romance Image Placeholder -->
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="300" fill="#0a0a0a"/>
+<circle cx="150" cy="90" r="30" fill="#6a00f4"/>
+<rect x="125" y="120" width="50" height="110" fill="#4a0080"/>
+<rect x="105" y="140" width="20" height="90" fill="#2d0080"/>
+<rect x="175" y="140" width="20" height="90" fill="#2d0080"/>
+<text x="150" y="260" text-anchor="middle" fill="#b794f6" font-family="Arial" font-size="14">My Chemical</text>
+<text x="150" y="280" text-anchor="middle" fill="#b794f6" font-family="Arial" font-size="14">Romance</text>
+</svg>

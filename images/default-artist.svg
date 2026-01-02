@@ -1,0 +1,9 @@
+<!-- Default Artist Image -->
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="150" height="150" fill="#1a1a2e"/>
+<circle cx="75" cy="50" r="20" fill="#4a0080"/>
+<rect x="55" y="70" width="40" height="60" fill="#6a00f4"/>
+<rect x="40" y="80" width="15" height="50" fill="#4a0080"/>
+<rect x="95" y="80" width="15" height="50" fill="#4a0080"/>
+<text x="75" y="145" text-anchor="middle" fill="#888" font-family="Arial" font-size="10">Artist</text>
+</svg>
