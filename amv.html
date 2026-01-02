@@ -7,163 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
-        .amv-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0;
-        }
-        
-        /* AMV Header Styles */
-        .amv-header {
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 46, 0.95) 50%, rgba(22, 33, 62, 0.95) 100%);
-            border-bottom: 2px solid #4a0080;
-            backdrop-filter: blur(10px);
-        }
-        
-        .amv-header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 30px 20px;
-        }
-        
-        .amv-logo-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .amv-header-logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #4a0080;
-            box-shadow: 0 0 30px rgba(106, 0, 244, 0.4);
-        }
-        
-        .amv-title-section {
-            text-align: left;
-        }
-        
-        .amv-title {
-            font-size: 3em;
-            font-weight: bold;
-            background: linear-gradient(45deg, #ff6b6b, #4a0080, #6a00f4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 5px;
-            text-shadow: 0 0 30px rgba(106, 0, 244, 0.3);
-        }
-        
-        .amv-subtitle {
-            font-size: 1.2em;
-            color: #888;
-            font-weight: 300;
-        }
-        
-        .amv-stats {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .amv-stat-item {
-            text-align: center;
-            padding: 15px 25px;
-            background: rgba(106, 0, 244, 0.1);
-            border: 1px solid #4a0080;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-        }
-        
-        .amv-stat-item:hover {
-            background: rgba(106, 0, 244, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(106, 0, 244, 0.2);
-        }
-        
-        .amv-stat-number {
-            display: block;
-            font-size: 2em;
-            font-weight: bold;
-            color: #ff6b6b;
-            margin-bottom: 8px;
-        }
-        
-        .amv-stat-label {
-            font-size: 0.8em;
-            color: #aaa;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .amv-header-middle {
-            padding: 0 30px;
-            margin-bottom: 20px;
-        }
-        
-        .amv-nav-links {
-            text-align: center;
-        }
-        
-        .amv-nav-link {
-            color: #e0e0e0;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
-            padding: 12px 25px;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .amv-nav-link:hover {
-            background: rgba(255, 107, 107, 0.2);
-            border-color: #ff6b6b;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.2);
-        }
-        
-        .amv-nav-link.active {
-            background: rgba(255, 107, 107, 0.3);
-            border-color: #ff6b6b;
-            color: #fff;
-            box-shadow: 0 0 25px rgba(255, 107, 107, 0.4);
-        }
-        
-        .amv-nav-icon {
-            font-size: 1.3em;
-        }
-        
-        .amv-nav-text {
-            font-weight: 500;
-        }
-        
-        .amv-header-bottom {
-            padding: 0 30px 30px;
-            text-align: center;
-        }
-        
-        .amv-description {
-            color: #ccc;
-            font-size: 1.2em;
-            margin-bottom: 25px;
-            font-weight: 300;
+        /* AMV Specific Styles */
+        .amv-section {
+            margin-top: 30px;
         }
         
         .amv-actions {
             display: flex;
             justify-content: center;
             gap: 20px;
+            margin-bottom: 30px;
             flex-wrap: wrap;
         }
         
         .play-all-btn {
-            background: linear-gradient(45deg, #ff6b6b, #4a0080);
+            background: linear-gradient(45deg, #6a00f4, #4a0080);
             color: #fff;
             border: none;
             padding: 12px 30px;
@@ -174,12 +32,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 5px 20px rgba(106, 0, 244, 0.3);
         }
         
         .play-all-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 8px 25px rgba(106, 0, 244, 0.4);
         }
         
         .back-to-music-btn {
@@ -312,124 +170,25 @@
         
         /* AMV Responsive Styles */
         
-        /* Tablets and Small Laptops (768px - 991px) */
+        /* Tablets (768px - 991px) */
         @media (max-width: 991px) and (min-width: 768px) {
-            .amv-header-top {
-                flex-direction: column;
+            .amv-actions {
                 gap: 15px;
-                padding: 20px 20px 15px;
             }
             
-            .amv-logo-container {
-                order: 1;
-            }
-            
-            .amv-stats {
-                order: 2;
-                gap: 15px;
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .amv-header-middle {
-                padding: 0 20px;
-                margin-bottom: 15px;
-            }
-            
-            .amv-nav-link {
-                margin: 0 10px;
-                font-size: 1em;
+            .play-all-btn, .back-to-music-btn {
                 padding: 10px 20px;
-            }
-            
-            .amv-nav-text {
-                display: none;
-            }
-            
-            .amv-header-bottom {
-                padding: 0 20px 20px;
-            }
-            
-            .amv-title {
-                font-size: 2.5em;
+                font-size: 0.9em;
             }
             
             .amv-grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                 gap: 15px;
             }
-            
-            .video-player {
-                max-width: 95%;
-                max-height: 65%;
-            }
         }
         
         /* Mobile Landscape (480px - 767px) */
         @media (max-width: 767px) and (min-width: 480px) {
-            .amv-header-top {
-                flex-direction: column;
-                gap: 10px;
-                padding: 15px 15px 10px;
-            }
-            
-            .amv-header-logo {
-                width: 45px;
-                height: 45px;
-            }
-            
-            .amv-title {
-                font-size: 2em;
-            }
-            
-            .amv-subtitle {
-                font-size: 1em;
-            }
-            
-            .amv-stats {
-                gap: 10px;
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .amv-stat-item {
-                padding: 10px 15px;
-                flex: 1;
-                max-width: 120px;
-            }
-            
-            .amv-stat-number {
-                font-size: 1.5em;
-            }
-            
-            .amv-stat-label {
-                font-size: 0.7em;
-            }
-            
-            .amv-header-middle {
-                padding: 0 15px;
-                margin-bottom: 10px;
-            }
-            
-            .amv-nav-link {
-                margin: 0 5px;
-                font-size: 0.9em;
-                padding: 8px 15px;
-            }
-            
-            .amv-nav-text {
-                display: none;
-            }
-            
-            .amv-header-bottom {
-                padding: 0 15px 15px;
-            }
-            
-            .amv-description {
-                font-size: 1em;
-                margin-bottom: 15px;
-            }
-            
             .amv-actions {
                 gap: 15px;
             }
@@ -463,86 +222,10 @@
             .amv-duration {
                 font-size: 0.75em;
             }
-            
-            .video-player {
-                max-width: 98%;
-                max-height: 60%;
-            }
-            
-            .video-title {
-                font-size: 1.3em;
-            }
-            
-            .video-artist {
-                font-size: 1em;
-            }
         }
         
         /* Mobile Portrait (320px - 479px) */
         @media (max-width: 479px) {
-            .amv-header-top {
-                padding: 10px 10px 5px;
-            }
-            
-            .amv-header-logo {
-                width: 40px;
-                height: 40px;
-            }
-            
-            .amv-title {
-                font-size: 1.8em;
-            }
-            
-            .amv-subtitle {
-                font-size: 0.9em;
-            }
-            
-            .amv-stats {
-                gap: 8px;
-            }
-            
-            .amv-stat-item {
-                padding: 8px 10px;
-                flex: 1;
-                max-width: 100px;
-            }
-            
-            .amv-stat-number {
-                font-size: 1.3em;
-            }
-            
-            .amv-stat-label {
-                font-size: 0.65em;
-            }
-            
-            .amv-header-middle {
-                padding: 0 10px;
-                margin-bottom: 8px;
-            }
-            
-            .amv-nav-link {
-                margin: 0 3px;
-                font-size: 0.85em;
-                padding: 6px 12px;
-            }
-            
-            .amv-nav-text {
-                display: none;
-            }
-            
-            .amv-nav-icon {
-                font-size: 1em;
-            }
-            
-            .amv-header-bottom {
-                padding: 0 10px 10px;
-            }
-            
-            .amv-description {
-                font-size: 0.9em;
-                margin-bottom: 12px;
-            }
-            
             .amv-actions {
                 gap: 10px;
                 flex-direction: column;
@@ -587,31 +270,6 @@
             .amv-duration {
                 font-size: 0.7em;
             }
-            
-            .close-video {
-                top: 15px;
-                right: 15px;
-                font-size: 25px;
-            }
-            
-            .video-player {
-                max-width: 95%;
-                max-height: 50%;
-            }
-            
-            .video-title {
-                font-size: 1.2em;
-                margin-bottom: 8px;
-            }
-            
-            .video-artist {
-                font-size: 0.95em;
-            }
-            
-            .video-info {
-                margin-top: 15px;
-                padding: 0 10px;
-            }
         }
         
         /* Ultra Small Devices (below 320px) */
@@ -644,57 +302,47 @@
     </style>
 </head>
 <body>
-    <div class="amv-container">
-        <div class="amv-header">
-            <div class="amv-header-top">
-                <div class="amv-logo-container">
-                    <img src="images/artists/logo.jpg" alt="Logo" class="amv-header-logo">
-                    <div class="amv-title-section">
-                        <h1 class="amv-title">AMV Music Videos</h1>
-                        <p class="amv-subtitle">Anime Music Videos Collection</p>
-                    </div>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="logo-container">
+                    <img src="images/artists/logo.jpg" alt="Logo" class="header-logo">
+                    <h1 class="title">AMV Player</h1>
                 </div>
-                <div class="amv-stats">
-                    <div class="amv-stat-item">
-                        <span class="amv-stat-number" id="totalVideos">10</span>
-                        <span class="amv-stat-label">Videos</span>
-                    </div>
-                    <div class="amv-stat-item">
-                        <span class="amv-stat-number" id="totalDuration">45:28</span>
-                        <span class="amv-stat-label">Duración Total</span>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalVideos">10</span>
+                        <span class="stat-label">Videos</span>
                     </div>
                 </div>
             </div>
-            <div class="amv-header-middle">
-                <nav class="amv-nav-links">
-                    <a href="index.html" class="amv-nav-link">
-                        <span class="amv-nav-icon">🎵</span>
-                        <span class="amv-nav-text">Música</span>
+            <div class="header-middle">
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon">🎵</span>
+                        <span class="nav-text">Música</span>
                     </a>
-                    <a href="amv.html" class="amv-nav-link active">
-                        <span class="amv-nav-icon">🎬</span>
-                        <span class="amv-nav-text">AMV Videos</span>
+                    <a href="amv.html" class="nav-link active">
+                        <span class="nav-icon">🎬</span>
+                        <span class="nav-text">AMV Videos</span>
                     </a>
                 </nav>
             </div>
-            <div class="amv-header-bottom">
-                <p class="amv-description">Disfruta de los mejores AMVs con la música de tu playlist favorita</p>
-                <div class="amv-actions">
-                    <button class="play-all-btn" onclick="amvPlayer.playRandomVideo()">
-                        <span class="btn-icon">🎲</span>
-                        <span>Reproducir Aleatorio</span>
-                    </button>
-                    <a href="index.html" class="back-to-music-btn">
-                        <span class="btn-icon">🎵</span>
-                        <span>Ir a Música</span>
-                    </a>
+            <div class="header-bottom">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Buscar AMVs..." class="search-input">
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="amv-grid" id="amvGrid">
-            <!-- AMVs se cargarán dinámicamente -->
-        </div>
+        <main class="main-content">
+            <section class="amv-section">
+                <div class="amv-grid" id="amvGrid">
+                    <!-- AMVs se cargarán dinámicamente -->
+                </div>
+            </section>
+        </main>
     </div>
 
     <div class="video-player-section" id="videoPlayerSection">
